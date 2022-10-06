@@ -1,0 +1,3 @@
+Insert into customers (delivery_adress) values "Paris, 45";
+Update customers set full_name = "Andrew Tate" where customer id = 1;
+Delete from customers where id = 5;
