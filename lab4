@@ -3,31 +3,25 @@ select *
 from course
 where credits > 3;
 select *
-from classroom
-where building = 'Watson'
+from classroom where building = 'Watson'
    or building = 'Packard';
 select *
-from course
-where dept_name = 'Comp. Sci.';
+from course where dept_name = 'Comp. Sci.';
 select *
-from course
-where course_id in (select course_id
+from course where course_id in (select course_id
                     from section
                     where section.semester = 'Fall');
 select *
-from student
-where tot_cred > 45
+from student where tot_cred > 45
   and tot_cred < 90;
 select *
-from student
-where name like '%a'
+from student where name like '%a'
    or name like '%e'
    or name like '%u'
    or name like '%i'
    or name like '%o';
 select *
-from course
-where course_id in (select course_id from prereq where prereq_id = 'CS-101');
+from course where course_id in (select course_id from prereq where prereq_id = 'CS-101');
 
 
 
